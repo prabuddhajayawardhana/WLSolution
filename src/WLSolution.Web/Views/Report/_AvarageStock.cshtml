@@ -1,0 +1,19 @@
+﻿<h1>Average Price by Category</h1>
+
+<table class="table" id="averagePriceTable">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Average Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Category</td>
+                <td>@item.AveragePrice</td>
+            </tr>
+        }
+    </tbody>
+</table>
